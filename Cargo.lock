@@ -1145,8 +1145,9 @@ dependencies = [
 [[package]]
 name = "halo2-base"
 version = "0.4.1"
-source = "git+https://github.com/axiom-crypto/halo2-lib.git?tag=v0.4.1-git#2fe813b3ccd4f224da195d61829effb20599dcbd"
+source = "git+https://github.com/shreyas-londhe/halo2-lib.git?branch=feat/secp256k1-hash2curve#23f3419faec31424d3437bb6ab05458db90f3751"
 dependencies = [
+ "ark-std 0.3.0",
  "getset",
  "halo2-axiom",
  "halo2_proofs",
@@ -1157,6 +1158,7 @@ dependencies = [
  "num-integer",
  "num-traits",
  "poseidon-primitives",
+ "rand",
  "rand_chacha",
  "rayon",
  "rustc-hash",
@@ -1167,7 +1169,7 @@ dependencies = [
 [[package]]
 name = "halo2-ecc"
 version = "0.4.1"
-source = "git+https://github.com/axiom-crypto/halo2-lib.git?tag=v0.4.1-git#2fe813b3ccd4f224da195d61829effb20599dcbd"
+source = "git+https://github.com/shreyas-londhe/halo2-lib.git?branch=feat/secp256k1-hash2curve#23f3419faec31424d3437bb6ab05458db90f3751"
 dependencies = [
  "halo2-base",
  "itertools 0.11.0",
@@ -1180,6 +1182,7 @@ dependencies = [
  "rayon",
  "serde",
  "serde_json",
+ "sha2",
  "test-case",
 ]
 
